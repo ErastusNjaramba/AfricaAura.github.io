@@ -1,5 +1,5 @@
 body{
-    background-color: #FF7F3E;
+    background-color: #F8F1F1;
 }
 
 .navigation{
@@ -13,15 +13,27 @@ body{
 }
 
 .logo{
-    color: #FFF6E9;
+    color: #DB6400;
 }
 
 .navlinks > a{
-    color: #604CC3;
+    color: #16697A;
     text-decoration: none;
     margin: 16px;
     font-size: 20px;
 }
+
+.navlinks > button {
+    padding: 10px;
+    border-radius: 9999px;
+    background-color: #16697A;
+    color: #F8F1F1;
+}
+
+.navlinks > button:hover{
+    background-color: #FFA62B;
+}
+
 .hero{
     width: 100%;
     height: 40vh;
@@ -30,7 +42,6 @@ body{
 }
 .hero img{
     width: 100%;
-    /* height: 100%; */
     object-fit: cover;
     display: block;
 }
@@ -41,7 +52,7 @@ body{
     left: 70%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #604CC3;
+    color: #FFA62B;
 }
 
 .hero-content h1 {

@@ -1,5 +1,5 @@
 body{
-    background-color: #FF7F3E;
+    background-color: #F8F1F1;
 }
 
 .navigation{
@@ -13,14 +13,25 @@ body{
 }
 
 .logo{
-    color: #FFF6E9;
+    color: #DB6400;
 }
 
 .navlinks > a{
-    color: #604CC3;
+    color: #16697A;
     text-decoration: none;
     margin: 16px;
     font-size: 20px;
+}
+
+.navlinks > button {
+    padding: 10px;
+    border-radius: 9999px;
+    background-color: #16697A;
+    color: #F8F1F1;
+}
+
+.navlinks > button:hover{
+    background-color: #FFA62B;
 }
 
 
@@ -43,7 +54,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #604CC3;
+    color: #FFA62B;
 }
 
 .hero-content h1 {
@@ -61,12 +72,12 @@ body{
     padding: 12px;
     font-size: 10px;
     border: none;
-    color: #FFF6E9;
-    background-color: #FF7F3E;
+    background-color: #16697A;
+    color: #F8F1F1;
 }
 
 .hero-content button:hover{
-    background-color: #604CC3;
+    background-color: #FFA62B;
 }
 .search{
     width: 80%;
@@ -83,8 +94,26 @@ body{
 .search > button {
     padding: 10px;
     border-radius: 9999px;
-    background-color: #604CC3;
-    color: white
+    background-color: #16697A;
+    color: #F8F1F1;
+}
+
+.search > button:hover {
+    background-color: #FFA62B;
+}
+
+.destination > div{
+    position: absolute;
+    top: 158%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;    
+}
+.destination > h1 {
+    text-align: center;
+    color: #FFA62B;
 }
 
 .row {
