@@ -103,13 +103,7 @@ body{
 }
 
 .destination > div{
-    position: absolute;
-    top: 158%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;    
+ margin-left: 17%;
 }
 .destination > h1 {
     text-align: center;
@@ -132,4 +126,59 @@ body{
     margin-top: 8px;
     width: 100%;
     vertical-align: middle;
+}
+
+.holiday-cards{
+    width: 70%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card > img{
+    width: 100%;
+    height: auto;
+}
+.card-content > p{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    width: 30%;
+    color: white;
+}
+
+.card-content{
+    padding: 16px;
+    text-align: center;
+}
+.card-content h2 {
+    margin: 0 0 8px;
+}
+
+.card-content p {
+    margin: 8px;
+    font-size: 18px;
+}
+
+.card-content button {
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #ff0080;
+    cursor: pointer;
+}
+
+.card-content button:hover{
+    background-color: #DB6400;
 }
