@@ -78,7 +78,7 @@ body {
 }
 
 .column > img {
-    margin-top: 8px;
+    margin-top: 4px;
     width: 100%;
     vertical-align: middle;
 }
@@ -109,7 +109,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     margin: 16px 0;
-    width: 30%;
+    width: 20%;
     color: white;
 }
 
@@ -138,4 +138,27 @@ body {
 
 .card-content button:hover {
     background-color: #DB6400;
+}
+
+footer {
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #DB6400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

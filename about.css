@@ -59,62 +59,84 @@ body{
     font-size: 50px;
     margin: 0;
 }
-#team {
-    background-color: #eee;
-    padding: 40px;
-    text-align: center;
-}
 
-#team h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    display: inline-block;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-}
-
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.team-member h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin: 0;
-}
-
-.team-member p {
-    font-size: 1em;
-    color: #666;
-    margin: 5px 0 0 0;
-}
-
-#mission-vision {
+.mission{
     display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    /* background-color: #fff; */
-    background-image: url(assets/masaimara.jpg);
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+.mission h2{
+ color: #16697A;
+ text-align: center;
+}
+.mission p {
+    color: #F8F1F1;
+
+}
+.vission {
+    background-color: #DB6400;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.statement {
-    width: 45%;
+
+
+
+
+.ourteam{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+.ourteam h2{
+ color: #16697A;
+ text-align: center;
+}
+.ourteam p {
+    color: #F8F1F1;
+
+}
+.team {
+    background-color: #DB6400;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.statement h2 {
-    font-size: 2em;
-    color: #333;
+.team > img {
+    width: 100%;
+    height: auto;
+}
+.team > img:hover {
+   background-color: #DB6400;
 }
 
-.statement p {
-    font-size: 1.2em;
-    color: #666;
+
+footer {
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #DB6400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 

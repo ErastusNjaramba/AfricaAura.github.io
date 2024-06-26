@@ -3,12 +3,13 @@ body {
 }
 
 .navigation {
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+
 
 }
 
@@ -78,105 +79,27 @@ body {
 .hero-content button:hover {
     background-color: #FFA62B;
 }
-/* .search {
-    width: 80%;
-    margin: 20px auto auto;
-}
 
-.search > input {
-    width: 80%;
-    padding: 10px;
-    border-radius: 9999px;
-}
 
-.search > button {
-    padding: 10px;
-    border-radius: 9999px;
-    background-color: #16697A;
-    color: #F8F1F1;
-}
-
-.search > button:hover {
-    background-color: #FFA62B;
-}
-
-.destination > div {
-    margin-left: 17%;
-}
-.destination > h1 {
-    text-align: center;
-    color: #FFA62B;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column > img {
-    margin-top: 8px;
-    width: 100%;
-    vertical-align: middle;
-}
-
-.holiday-cards {
-    width: 70%;
+footer {
     margin: auto;
-    color: rgb(0, 0, 0);
-    margin-top: 50px;
-}
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.card > img {
-    width: 100%;
-    height: auto;
-}
-.card-content > p {
-    margin: 8px 0;
-    font-size: 18px;
-}
-.card {
-    background-color: #1c1c1c;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 16px 0;
-    width: 30%;
+    margin-top: 5rem;
+    background-color: #DB6400;
     color: white;
-}
-
-.card-content {
-    padding: 16px;
+    padding: 20px;
     text-align: center;
 }
-.card-content h2 {
-    margin: 0 0 8px;
+
+footer p {
+    margin: 5px 0;
 }
 
-.card-content p {
-    margin: 8px;
-    font-size: 18px;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.card-content button {
-    margin: 8px 0;
-    padding: 12px 24px;
-    font-size: 16px;
-    border: none;
-    color: white;
-    background-color: #ff0080;
-    cursor: pointer;
+footer a:hover {
+    text-decoration: underline;
 }
-
-.card-content button:hover {
-    background-color: #DB6400;
-} */
