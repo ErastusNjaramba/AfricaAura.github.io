@@ -12,9 +12,9 @@ body{
     
 }
 
-.logo{
+/* .logo{
     color: #DB6400;
-}
+} */
 
 .navlinks > a{
     color: #16697A;
@@ -60,6 +60,10 @@ body{
     margin: 0;
 }
 
+.hero-content h2 {
+    color: #F8F1F1;
+}
+
 .mission{
     display: flex;
     justify-content: space-between;
@@ -81,10 +85,6 @@ body{
     padding: 15px;
     border-radius: 15px;
 }
-
-
-
-
 
 .ourteam{
     display: flex;
