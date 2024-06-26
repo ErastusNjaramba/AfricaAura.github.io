@@ -59,4 +59,62 @@ body{
     font-size: 50px;
     margin: 0;
 }
+#team {
+    background-color: #eee;
+    padding: 40px;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+#mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    /* background-color: #fff; */
+    background-image: url(assets/masaimara.jpg);
+}
+
+.statement {
+    width: 45%;
+}
+
+.statement h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.statement p {
+    font-size: 1.2em;
+    color: #666;
+}
 
