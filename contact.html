@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AfricaAura</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="navigation">
+        <img src="assets/AfricaAura.png" alt="AfricaAura logo">
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signin.html"><button>Sign In</button></a>
+        </div>
+    </section>
+
+    <section class="hero">
+        <img src="assets/lion.jpg" alt="Contact Us Hero Image">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <h2>We'd love to hear from you! Reach out with any questions or inquiries.</h2>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:info@africaaura.com">info@africaaura.com</a></p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 AfricaAura Lane, Nairobi, Kenya</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AfricaAura. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
