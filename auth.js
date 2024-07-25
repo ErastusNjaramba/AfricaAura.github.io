@@ -9,41 +9,29 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCIkhkSZIzXN1-mhwiMB429EkPA0aVX2DQ",
-    authDomain: "africaaura-f6f36.firebaseapp.com",
-    projectId: "africaaura-f6f36",
-    storageBucket: "africaaura-f6f36.appspot.com",
-    messagingSenderId: "190348762288",
-    appId: "1:190348762288:web:573be711f2aa7f69b3af75",
-    measurementId: "G-4LKCP4JQSV"
-};
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
-const main = document.getElementById("main");
-const returnBtn = document.getElementById("return-btn");
-
-// Sign in form
+const submitButton = document.getElementById("submit");
 
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
-const submitButton = document.getElementById("submit");
-const signupButton = document.getElementById("sign-up");
+const main = document.getElementById("main");
+const createacct = document.getElementById("create-acct");
 
-//create account
 const signupEmailIn = document.getElementById("email-signup");
 const confirmSignupEmailIn = document.getElementById("confirm-email-signup");
 const signupPasswordIn = document.getElementById("password-signup");
 const confirmSignUpPasswordIn = document.getElementById(
-    "confirm-password-signup"
+  "confirm-password-signup"
 );
-const createacct = document.getElementById("create-acct");
 
 // Start with this
 const createacctbtn = document.getElementById("create-acct-btn");
+const returnBtn = document.getElementById("return-btn");
+const signupButton = document.getElementById("sign-up");
 
 var email,
   password,
