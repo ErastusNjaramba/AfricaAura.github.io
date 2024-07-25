@@ -13,11 +13,6 @@ body {
 
 }
 
-/* .logo {
-    color: #DB6400; 
-    width: 7%;
-    height: auto;
-} */
 
 .navlinks > a {
     color: #16697A;
@@ -108,4 +103,27 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .navigation {
+        width: 80%;
+    }
+
+    .navlinks > a {
+        margin: 16px;
+        font-size: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content button {
+        font-size: 16px;
+    }
 }
