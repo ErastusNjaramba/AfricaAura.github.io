@@ -1,5 +1,4 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  // require('dotenv').config();
+// require('dotenv').config();
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 import {
@@ -7,19 +6,32 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
 
+// const firebaseConfig = {};
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCIkhkSZIzXN1-mhwiMB429EkPA0aVX2DQ",
+  authDomain: "africaaura-f6f36.firebaseapp.com",
+  projectId: "africaaura-f6f36",
+  storageBucket: "africaaura-f6f36.appspot.com",
+  messagingSenderId: "190348762288",
+  appId: "1:190348762288:web:573be711f2aa7f69b3af75",
+  measurementId: "G-4LKCP4JQSV"
+};
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
+const analytics = getAnalytics(app);
 
-const submitButton = document.getElementById("submit");
+const main = document.getElementById("main");
+const returnBtn = document.getElementById("return-btn");
 
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
-const main = document.getElementById("main");
-const createacct = document.getElementById("create-acct");
+const submitButton = document.getElementById("submit");
+const signupButton = document.getElementById("sign-up");
 
 const signupEmailIn = document.getElementById("email-signup");
 const confirmSignupEmailIn = document.getElementById("confirm-email-signup");
@@ -27,11 +39,10 @@ const signupPasswordIn = document.getElementById("password-signup");
 const confirmSignUpPasswordIn = document.getElementById(
   "confirm-password-signup"
 );
+const createacct = document.getElementById("create-acct");
 
 // Start with this
 const createacctbtn = document.getElementById("create-acct-btn");
-const returnBtn = document.getElementById("return-btn");
-const signupButton = document.getElementById("sign-up");
 
 var email,
   password,
@@ -120,3 +131,5 @@ returnBtn.addEventListener("click", function () {
   main.style.display = "block";
   createacct.style.display = "none";
 });
+
+analytics.logEvent("notification_received");
