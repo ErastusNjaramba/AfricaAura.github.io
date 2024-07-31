@@ -89,6 +89,22 @@ document.addEventListener("DOMContentLoaded", () => {
     intasend.on("IN-PROGRESS", (results) => {
       console.log("Payment in progress", results);
     });
+    
+    function saveBookingToFirebase(bookingDetails) {
+      const userId = "exampleUserId";
+      const dbRef = ref(database, "bookings/" + userId);
+      set(dbRef,{
+        ...bookingDetails,
+      })
+      .then(()=> {
+        console.log("Booking saved successfully");
+        // optionally, show a success message
+      })
+      .catch((error) => {
+        console.error("Error saving booking: ", error);
+        // Optionally, show an error message
+      }); 
+    }
   
     // Update the button attributes
     paymentButton.dataset.amount = 10; // Replace with actual amount based on bookingDetails
